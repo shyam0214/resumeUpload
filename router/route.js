@@ -7,7 +7,7 @@ const Application = require("../models/Application");
 const jwt = require("jsonwebtoken");
 
 // Setup multer for file uploads
-const upload = multer({ dest: "uploads/" });
+const upload = multer();
 
 // Register User
 router.post("/signup", async (req, res) => {
