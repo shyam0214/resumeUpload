@@ -9,7 +9,7 @@ const app = express();
 const port = 5000;
 
 const upload = multer();
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(express.json());
 app.use(cors());
